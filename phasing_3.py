@@ -33,13 +33,12 @@ def linear_velocity(radius_vector, semi_major_axis):
 # task 1, symmetric
 
 n_1 = 3
-# altitude_1 = 1150000  # m
 altitude_1 = 1150.0  # km
 
 period_1 = period_from_altitude(altitude_1)
 print("This is period [sec]: " + str(period_1))
 
-time_maneuver = 2/3 * period_1 + period_1
+time_maneuver = (1/9 * period_1 + 3*period_1)/3
 
 semi_major_axis_maneuver_1 = semi_major_axis_from_period(time_maneuver)
 print("This is R_EARTH+altitude_1 [km]: " + str(R_EARTH+altitude_1))
@@ -56,17 +55,16 @@ print("This is delta_v for maneuver1 [km/s]: " + str(delta_v_1))
 # create orbit
 linear_velocity_y = float('{:.3f}'.format(linear_velocity(R_EARTH+altitude_1, R_EARTH+altitude_1)))
 r1_x = R_EARTH+altitude_1
-#r_test = 7428
 
 r1 = [r1_x, 0, 0] * u.km
 v1 = [0.000, linear_velocity_y, 0.000] * u.km / u.s
 
-#r = [-6045, -3490, 2500] * u.km
-#v = [0.000, 6.618, 0.000] * u.km / u.s
 epoch = time.Time("2015-05-09 10:43")  # UTC by default
 orbit1 = Orbit.from_vectors(Earth, r1, v1, epoch=epoch)
 
-fig, ax = plt.subplots()
+fig, ax = plt.subplots() #(figsize=(4, 4))
 plotter = StaticOrbitPlotter(ax)
-plotter.plot(orbit1, label="Initial orbit")
+plotter.plot(orbit1, label="Initial orbit", color="red")
+plt.savefig("fig.png")
+
 plt.show()
