@@ -1,0 +1,1 @@
+Maneuvers on GEO orbit with altitude = 35800, for SC on Russia, number of SC = 5

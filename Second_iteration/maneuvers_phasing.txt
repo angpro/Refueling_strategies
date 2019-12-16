@@ -1,0 +1,452 @@
+Maneuvers on GEO orbit with altitude = 35800, for SC on Russia, number of SC = 5
+This orbit LOWER THAN 300 km
+
+This orbit LOWER THAN 300 km
+
+This orbit LOWER THAN 300 km
+
+This orbit LOWER THAN 300 km
+
+-------------------------------------
+Type of maneuver: one-revolution phasing maneuver
+Where is SSC: SSC is the first one or last one
+Time of maneuver [month] for one dfi: 1.0
+Number of revolutions on the circ orbit for one dfi: 0
+dv without going in initial point: (40.038660897291-74.77908318983904j)
+T maneuver without going in initial point: 31465.077751509238
+dv: (32.511463309416975-62.31590265819921j)
+T maneuver: 134850.33322075388
+
+Number of revolutions on the circ orbit for one dfi: 1
+dv without going in initial point: -0.9635012864868795
+T maneuver without going in initial point: 436016.07741377084
+dv: -1.6570051770645975
+T maneuver: 471976.16627263854
+
+Number of revolutions on the circ orbit for one dfi: 2
+dv without going in initial point: -7.095872706301098
+T maneuver without going in initial point: 840567.0770760326
+dv: -6.767314693576445
+T maneuver: 809101.9993245234
+
+Number of revolutions on the circ orbit for one dfi: 3
+dv without going in initial point: -9.444066168512684
+T maneuver without going in initial point: 1245118.0767382942
+dv: -8.724142578752769
+T maneuver: 1146227.832376408
+
+Number of revolutions on the circ orbit for one dfi: 4
+dv without going in initial point: -10.736486625594647
+T maneuver without going in initial point: 1649669.0764005557
+dv: -9.80115962632107
+T maneuver: 1483353.6654282927
+
+Number of revolutions on the circ orbit for one dfi: 5
+dv without going in initial point: -11.570939328399806
+T maneuver without going in initial point: 2054220.0760628174
+dv: -10.496536878658702
+T maneuver: 1820479.4984801775
+
+Number of revolutions on the circ orbit for one dfi: 6
+dv without going in initial point: -12.161308624395879
+T maneuver without going in initial point: 2458771.0757250786
+dv: -10.988511291988765
+T maneuver: 2157605.3315320616
+
+Number of revolutions on the circ orbit for one dfi: 7
+dv without going in initial point: -12.604637622573794
+T maneuver without going in initial point: 2863322.0753873405
+dv: -11.357952123803692
+T maneuver: 2494731.1645839466
+
+Number of revolutions on the circ orbit for one dfi: 8
+dv without going in initial point: -12.95182632091532
+T maneuver without going in initial point: 3267873.0750496024
+OVER TIME
+
+Time of maneuver [month] for one dfi: 3.0
+Number of revolutions on the circ orbit for one dfi: 0
+dv without going in initial point: (40.038660897291-74.77908318983904j)
+T maneuver without going in initial point: 31465.077751509238
+dv: (32.511463309416975-62.31590265819921j)
+T maneuver: 134850.33322075388
+
+Number of revolutions on the circ orbit for one dfi: 1
+dv without going in initial point: -0.9635012864868795
+T maneuver without going in initial point: 436016.07741377084
+dv: -1.6570051770645975
+T maneuver: 471976.16627263854
+
+Number of revolutions on the circ orbit for one dfi: 2
+dv without going in initial point: -7.095872706301098
+T maneuver without going in initial point: 840567.0770760326
+dv: -6.767314693576445
+T maneuver: 809101.9993245234
+
+Number of revolutions on the circ orbit for one dfi: 3
+dv without going in initial point: -9.444066168512684
+T maneuver without going in initial point: 1245118.0767382942
+dv: -8.724142578752769
+T maneuver: 1146227.832376408
+
+Number of revolutions on the circ orbit for one dfi: 4
+dv without going in initial point: -10.736486625594647
+T maneuver without going in initial point: 1649669.0764005557
+dv: -9.80115962632107
+T maneuver: 1483353.6654282927
+
+Number of revolutions on the circ orbit for one dfi: 5
+dv without going in initial point: -11.570939328399806
+T maneuver without going in initial point: 2054220.0760628174
+dv: -10.496536878658702
+T maneuver: 1820479.4984801775
+
+Number of revolutions on the circ orbit for one dfi: 6
+dv without going in initial point: -12.161308624395879
+T maneuver without going in initial point: 2458771.0757250786
+dv: -10.988511291988765
+T maneuver: 2157605.3315320616
+
+Number of revolutions on the circ orbit for one dfi: 7
+dv without going in initial point: -12.604637622573794
+T maneuver without going in initial point: 2863322.0753873405
+dv: -11.357952123803692
+T maneuver: 2494731.1645839466
+
+Number of revolutions on the circ orbit for one dfi: 8
+dv without going in initial point: -12.95182632091532
+T maneuver without going in initial point: 3267873.0750496024
+dv: -11.647276039088297
+T maneuver: 2831856.9976358316
+
+Number of revolutions on the circ orbit for one dfi: 9
+dv without going in initial point: -13.232345320129273
+T maneuver without going in initial point: 3672424.074711864
+dv: -11.881041871766591
+T maneuver: 3168982.830687716
+
+Number of revolutions on the circ orbit for one dfi: 10
+dv without going in initial point: -13.464532526142179
+T maneuver without going in initial point: 4076975.0743741253
+dv: -12.074531210110681
+T maneuver: 3506108.6637396007
+
+Number of revolutions on the circ orbit for one dfi: 11
+dv without going in initial point: -13.66044378656687
+T maneuver without going in initial point: 4481526.074036387
+dv: -12.237790593797921
+T maneuver: 3843234.496791485
+
+Number of revolutions on the circ orbit for one dfi: 12
+dv without going in initial point: -13.828356786931344
+T maneuver without going in initial point: 4886077.073698649
+dv: -12.377718094101652
+T maneuver: 4180360.3298433702
+
+Number of revolutions on the circ orbit for one dfi: 13
+dv without going in initial point: -13.974158717429528
+T maneuver without going in initial point: 5290628.073360911
+dv: -12.499219702850137
+T maneuver: 4517486.162895256
+
+Number of revolutions on the circ orbit for one dfi: 14
+dv without going in initial point: -14.102160362968451
+T maneuver without going in initial point: 5695179.073023172
+dv: -12.60588774079924
+T maneuver: 4854611.995947139
+
+Number of revolutions on the circ orbit for one dfi: 15
+dv without going in initial point: -14.21559653101895
+T maneuver without going in initial point: 6099730.072685434
+dv: -12.700417880841322
+T maneuver: 5191737.828999025
+
+Number of revolutions on the circ orbit for one dfi: 16
+dv without going in initial point: -14.31694591917881
+T maneuver without going in initial point: 6504281.072347695
+dv: -12.784875704307872
+T maneuver: 5528863.662050908
+
+Number of revolutions on the circ orbit for one dfi: 17
+dv without going in initial point: -14.408142465028511
+T maneuver without going in initial point: 6908832.072009956
+dv: -12.860872825849288
+T maneuver: 5865989.495102794
+
+Number of revolutions on the circ orbit for one dfi: 18
+dv without going in initial point: -14.490719035439312
+T maneuver without going in initial point: 7313383.07167222
+dv: -12.929686634524959
+T maneuver: 6203115.328154678
+
+Number of revolutions on the circ orbit for one dfi: 19
+dv without going in initial point: -14.565907570347836
+T maneuver without going in initial point: 7717934.071334481
+dv: -12.992343746948727
+T maneuver: 6540241.161206564
+
+This orbit LOWER THAN 300 km
+
+This orbit LOWER THAN 300 km
+
+This orbit LOWER THAN 300 km
+
+-------------------------------------
+Type of maneuver: multi-revolution phasing maneuver
+-- -- -- -- -- --
+Number of dfi in fi: 2
+Where is SSC: SSC is the first one or last one
+Time of maneuver [month] for one dfi: 0.5
+Number of revolutions on the circ orbit for one dfi: 0
+dv without going in initial point: (80.077321794582-149.55816637967808j)
+T maneuver without going in initial point: 62930.155503018475
+dv: (65.87701405715947-124.63180531639841j)
+T maneuver: 161071.23134701158
+
+Number of revolutions on the circ orbit for one dfi: 1
+dv without going in initial point: -1.927002572973759
+T maneuver without going in initial point: 872032.1548275417
+dv: -2.4599229158036637
+T maneuver: 835322.897450781
+
+Number of revolutions on the circ orbit for one dfi: 2
+dv without going in initial point: -14.191745412602195
+T maneuver without going in initial point: 1681134.1541520653
+dv: -12.680541948827358
+T maneuver: 1509574.5635545505
+
+Number of revolutions on the circ orbit for one dfi: 3
+dv without going in initial point: -18.888132337025368
+T maneuver without going in initial point: 2490236.1534765884
+dv: -16.594197719180006
+T maneuver: 2183826.2296583196
+
+Number of revolutions on the circ orbit for one dfi: 4
+dv without going in initial point: -21.472973251189295
+T maneuver without going in initial point: 3299338.1528011113
+OVER TIME
+
+Time of maneuver [month] for one dfi: 1.5
+Number of revolutions on the circ orbit for one dfi: 0
+dv without going in initial point: (80.077321794582-149.55816637967808j)
+T maneuver without going in initial point: 62930.155503018475
+dv: (65.87701405715947-124.63180531639841j)
+T maneuver: 161071.23134701158
+
+Number of revolutions on the circ orbit for one dfi: 1
+dv without going in initial point: -1.927002572973759
+T maneuver without going in initial point: 872032.1548275417
+dv: -2.4599229158036637
+T maneuver: 835322.897450781
+
+Number of revolutions on the circ orbit for one dfi: 2
+dv without going in initial point: -14.191745412602195
+T maneuver without going in initial point: 1681134.1541520653
+dv: -12.680541948827358
+T maneuver: 1509574.5635545505
+
+Number of revolutions on the circ orbit for one dfi: 3
+dv without going in initial point: -18.888132337025368
+T maneuver without going in initial point: 2490236.1534765884
+dv: -16.594197719180006
+T maneuver: 2183826.2296583196
+
+Number of revolutions on the circ orbit for one dfi: 4
+dv without going in initial point: -21.472973251189295
+T maneuver without going in initial point: 3299338.1528011113
+dv: -18.74823181431661
+T maneuver: 2858077.895762089
+
+Number of revolutions on the circ orbit for one dfi: 5
+dv without going in initial point: -23.141878656799612
+T maneuver without going in initial point: 4108440.1521256347
+dv: -20.138986318991876
+T maneuver: 3532329.5618658587
+
+Number of revolutions on the circ orbit for one dfi: 6
+dv without going in initial point: -24.322617248791758
+T maneuver without going in initial point: 4917542.151450157
+dv: -21.122935145651997
+T maneuver: 4206581.227969627
+
+Number of revolutions on the circ orbit for one dfi: 7
+dv without going in initial point: -25.209275245147587
+T maneuver without going in initial point: 5726644.150774681
+dv: -21.861816809281855
+T maneuver: 4880832.894073397
+
+Number of revolutions on the circ orbit for one dfi: 8
+dv without going in initial point: -25.90365264183064
+T maneuver without going in initial point: 6535746.150099205
+dv: -22.440464639851065
+T maneuver: 5555084.560177167
+
+Number of revolutions on the circ orbit for one dfi: 9
+dv without going in initial point: -26.464690640258546
+T maneuver without going in initial point: 7344848.149423728
+dv: -22.907996305207654
+T maneuver: 6229336.226280936
+
+Number of revolutions on the circ orbit for one dfi: 10
+dv without going in initial point: -26.929065052284358
+T maneuver without going in initial point: 8153950.148748251
+dv: -23.29497498189583
+T maneuver: 6903587.892384705
+
+Number of revolutions on the circ orbit for one dfi: 11
+dv without going in initial point: -27.32088757313374
+T maneuver without going in initial point: 8963052.148072774
+dv: -23.621493749270314
+T maneuver: 7577839.558488474
+
+Number of revolutions on the circ orbit for one dfi: 12
+dv without going in initial point: -27.65671357386269
+T maneuver without going in initial point: 9772154.147397298
+OVER TIME
+
+-- -- -- -- -- --
+Number of dfi in fi: 3
+Where is SSC: SSC is the first one or last one
+Time of maneuver [month] for one dfi: 0.3333333333333333
+Number of revolutions on the circ orbit for one dfi: 0
+dv without going in initial point: (120.115982691873-224.33724956951713j)
+T maneuver without going in initial point: 94395.23325452772
+dv: (99.24256480490196-186.94770797459762j)
+T maneuver: 187292.12947326928
+
+Number of revolutions on the circ orbit for one dfi: 1
+dv without going in initial point: -2.8905038594606385
+T maneuver without going in initial point: 1308048.2322413125
+dv: -3.26284065454273
+T maneuver: 1198669.6286289233
+
+Number of revolutions on the circ orbit for one dfi: 2
+dv without going in initial point: -21.287618118903293
+T maneuver without going in initial point: 2521701.231228098
+dv: -18.593769204078278
+T maneuver: 2210047.1277845777
+
+Number of revolutions on the circ orbit for one dfi: 3
+dv without going in initial point: -28.332198505538052
+T maneuver without going in initial point: 3735354.2302148826
+OVER TIME
+
+Time of maneuver [month] for one dfi: 1.0
+Number of revolutions on the circ orbit for one dfi: 0
+dv without going in initial point: (120.115982691873-224.33724956951713j)
+T maneuver without going in initial point: 94395.23325452772
+dv: (99.24256480490196-186.94770797459762j)
+T maneuver: 187292.12947326928
+
+Number of revolutions on the circ orbit for one dfi: 1
+dv without going in initial point: -2.8905038594606385
+T maneuver without going in initial point: 1308048.2322413125
+dv: -3.26284065454273
+T maneuver: 1198669.6286289233
+
+Number of revolutions on the circ orbit for one dfi: 2
+dv without going in initial point: -21.287618118903293
+T maneuver without going in initial point: 2521701.231228098
+dv: -18.593769204078278
+T maneuver: 2210047.1277845777
+
+Number of revolutions on the circ orbit for one dfi: 3
+dv without going in initial point: -28.332198505538052
+T maneuver without going in initial point: 3735354.2302148826
+dv: -24.464252859607242
+T maneuver: 3221424.626940232
+
+Number of revolutions on the circ orbit for one dfi: 4
+dv without going in initial point: -32.20945987678394
+T maneuver without going in initial point: 4949007.229201667
+dv: -27.69530400231215
+T maneuver: 4232802.126095885
+
+Number of revolutions on the circ orbit for one dfi: 5
+dv without going in initial point: -34.71281798519942
+T maneuver without going in initial point: 6162660.228188452
+dv: -29.78143575932505
+T maneuver: 5244179.62525154
+
+Number of revolutions on the circ orbit for one dfi: 6
+dv without going in initial point: -36.48392587318764
+T maneuver without going in initial point: 7376313.227175236
+dv: -31.25735899931523
+T maneuver: 6255557.124407193
+
+Number of revolutions on the circ orbit for one dfi: 7
+dv without going in initial point: -37.813912867721385
+T maneuver without going in initial point: 8589966.226162022
+dv: -32.36568149476002
+T maneuver: 7266934.623562848
+
+Number of revolutions on the circ orbit for one dfi: 8
+dv without going in initial point: -38.85547896274596
+T maneuver without going in initial point: 9803619.225148808
+OVER TIME
+
+-- -- -- -- -- --
+Number of dfi in fi: 4
+Where is SSC: SSC is the first one or last one
+Time of maneuver [month] for one dfi: 0.25
+Number of revolutions on the circ orbit for one dfi: 0
+dv without going in initial point: (160.154643589164-299.11633275935617j)
+T maneuver without going in initial point: 125860.31100603695
+dv: (132.60811555264448-249.26361063279683j)
+T maneuver: 213513.02759952698
+
+Number of revolutions on the circ orbit for one dfi: 1
+dv without going in initial point: -3.854005145947518
+T maneuver without going in initial point: 1744064.3096550833
+dv: -4.065758393281796
+T maneuver: 1562016.3598070657
+
+Number of revolutions on the circ orbit for one dfi: 2
+dv without going in initial point: -28.38349082520439
+T maneuver without going in initial point: 3362268.3083041306
+This orbit LOWER THAN 300 km
+
+OVER TIME
+
+Time of maneuver [month] for one dfi: 0.75
+Number of revolutions on the circ orbit for one dfi: 0
+dv without going in initial point: (160.154643589164-299.11633275935617j)
+T maneuver without going in initial point: 125860.31100603695
+dv: (132.60811555264448-249.26361063279683j)
+T maneuver: 213513.02759952698
+
+Number of revolutions on the circ orbit for one dfi: 1
+dv without going in initial point: -3.854005145947518
+T maneuver without going in initial point: 1744064.3096550833
+dv: -4.065758393281796
+T maneuver: 1562016.3598070657
+
+Number of revolutions on the circ orbit for one dfi: 2
+dv without going in initial point: -28.38349082520439
+T maneuver without going in initial point: 3362268.3083041306
+dv: -24.506996459329187
+T maneuver: 2910519.692014605
+
+Number of revolutions on the circ orbit for one dfi: 3
+dv without going in initial point: -37.776264674050736
+T maneuver without going in initial point: 4980472.306953177
+dv: -32.334308000034476
+T maneuver: 4259023.024222143
+
+Number of revolutions on the circ orbit for one dfi: 4
+dv without going in initial point: -42.94594650237859
+T maneuver without going in initial point: 6598676.305602223
+dv: -36.64237619030769
+T maneuver: 5607526.356429682
+
+Number of revolutions on the circ orbit for one dfi: 5
+dv without going in initial point: -46.283757313599224
+T maneuver without going in initial point: 8216880.304251269
+dv: -39.423885199658216
+T maneuver: 6956029.688637221
+
+Number of revolutions on the circ orbit for one dfi: 6
+dv without going in initial point: -48.645234497583516
+T maneuver without going in initial point: 9835084.302900314
+OVER TIME
+

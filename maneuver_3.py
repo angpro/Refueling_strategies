@@ -41,7 +41,7 @@ plotter = StaticOrbitPlotter(ax)
 # plotter = OrbitPlotter3D(figure=fig)
 plotter.plot(ss_i_1, label="Initial orbit", color="red")
 plotter.plot(ss_a_1, label="Phasing orbit", color="blue")
-# plotter.plot(ss_f_2, label="Final orbit", color="green")
+plotter.plot(ss_f_2, label="Final orbit", color="green")
 
 plt.savefig("fig.png")
 

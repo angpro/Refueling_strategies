@@ -7,6 +7,7 @@ from astropy import units as u
 import matplotlib.pyplot as plt
 from poliastro.plotting import StaticOrbitPlotter
 
+
 # u.Quantity
 import numpy as np
 
@@ -31,6 +32,37 @@ def mean_montion_from_altitude(altitude):  # km
     return (M/a**3)**0.5
 
 
+def lambert_transfer(ss_dpt, ss_arr, revs):
+    """ Returns the short and long transfer orbits when solving Lambert's problem.
+
+    Parameters
+    ----------
+    ss_dpt: poliastro.twobody.Orbit
+        Deprature orbit.
+    ss_arr: poliastro.twobody.Orbit
+        Arrival orbit.
+    revs: int
+        Number of revolutions.
+
+    Returns
+    -------
+    ss_short: poliastro.twobody.Orbit
+        Short transfer orbit.
+    ss_long: poliastro.twobody.Orbit
+        Long transfer orbit.
+    """
+
+    # Solving for short and long maneuvers
+    lambert_short = Maneuver.lambert(ss_dpt, ss_arr, short=True, M=revs)
+    lambert_long = Maneuver.lambert(ss_dpt, ss_arr, short=False, M=revs)
+
+    # Aplly both maneuvers
+    ss_short, _ = ss_dpt.apply_maneuver(lambert_short, intermediate=True)
+    ss_long, _ = ss_dpt.apply_maneuver(lambert_long, intermediate=True)
+
+    return ss_short, ss_long
+
+
 # =========================================================================
 # orbit 1
 date_launch = time.Time('2011-10-26 15:02', scale='utc')
@@ -45,7 +77,12 @@ r1 = [r1_x, 0, 0] * u.km
 v1 = [0.000, linear_velocity_y_1, 0.000] * u.km / u.s
 orbit1 = Orbit.from_vectors(Earth, r1, v1, epoch=date_launch)
 
+print("This is my_period")
 t1 = period_from_altitude(altitude_1)
+print(t1)
+
+print("This is period")
+print(orbit1.period)
 
 # =========================================================================
 # =========================================================================
@@ -53,7 +90,7 @@ t1 = period_from_altitude(altitude_1)
 
 # CHANGE ME
 # ------------------------
-t_maneuver = t1 + 1/3 * t1
+t_maneuver = t1 + 3 * t1
 print("t_maneuver")
 print(t_maneuver)
 # dv = [1.7, 0.5, 0] * u.km / u.s
@@ -81,7 +118,7 @@ orbit2 = Orbit.from_vectors(Earth, r2, v2, epoch=date_arrival)
 # =========================================================================
 # Maneuver1
 
-man_lambert1 = Maneuver.lambert(orbit1, orbit2, short=False)
+man_lambert1 = Maneuver.lambert(orbit1, orbit2, short=False, M=3)
 
 orbit_trans, orbit_target = orbit1.apply_maneuver(man_lambert1, intermediate=True)
 
@@ -112,7 +149,6 @@ print(man_lambert1.get_total_time())
 
 # =========================================================================
 # try to plot it
-
 fig, ax = plt.subplots() #(figsize=(4, 4))
 plotter = StaticOrbitPlotter(ax)
 plotter.plot(orbit1, label="Initial orbit", color="red")
@@ -120,4 +156,9 @@ plotter.plot(orbit_trans, label="Trans orbit", color="blue")
 plotter.plot(orbit_target, label="Final orbit", color="green")
 plt.savefig("fig.png")
 plt.show()
+
+
+# =========================================================================
+
+
 
