@@ -19,11 +19,14 @@ sc_longitude = np.linspace(distance_sc_dergee/2+longitude1, longitude2-distance_
 distance_sc = distance_sc_dergee / 180 * np.pi * u.rad
 
 orbit = sfl.orbit_from_altitude(altitude=altitude)
+period = orbit.period.value
+file_maneuvers.write("Period of circ orbit = " + str(period) +'\n')
+
 orbits = [orbit]
 for i in range(1, sc_num+1):
     orbits.append(orbit.propagate_to_anomaly(sc_longitude[i-1]))
 
-
+file_maneuvers.close()
 # =========================================================================
 # SSC is the first one
 
@@ -46,10 +49,16 @@ file_maneuvers.write("-------------------------------------" + '\n')
 file_maneuvers.write("Type of maneuver: multi-revolution phasing maneuver" + '\n')
 
 num_dfi_in_fi_list = [2, 3, 4]
-for num_dfi_in_fi in num_dfi_in_fi_list:
-    file_maneuvers.write("-- -- -- -- -- --" + '\n')
-    file_maneuvers.write("Number of dfi in fi: " + str(num_dfi_in_fi) + '\n')
-    sfp.phasing_man(t_maneuvers, distance_sc_dergee, orbit_ssc_first, type_of_ssc_location=1,
-                    file_maneuvers=file_maneuvers, num_dfi_in_fi=num_dfi_in_fi)
+
+# for num_dfi_in_fi in num_dfi_in_fi_list:
+#     file_maneuvers.write("-- -- -- -- -- --" + '\n')
+#     file_maneuvers.write("Number of dfi (one revolution) in total fi (total maneuver): " + str(num_dfi_in_fi) + '\n')
+#     sfp.phasing_man(t_maneuvers, distance_sc_dergee, orbit_ssc_first, type_of_ssc_location=1,
+#                     file_maneuvers=file_maneuvers, num_dfi_in_fi=num_dfi_in_fi)
+
+num_dfi_in_fi = num_dfi_in_fi_list[0]
+t_maneuvers = [1 * 3600 * 24 * 30]
+sfp.phasing_man(t_maneuvers, distance_sc_dergee, orbit_ssc_first, type_of_ssc_location=1,
+                file_maneuvers=file_maneuvers, num_dfi_in_fi=num_dfi_in_fi, plot=True)
 
 file_maneuvers.close()
