@@ -40,7 +40,7 @@ file_maneuvers.write("Where is SSC: SSC is the first one or last one" + '\n')
 
 flag = True
 
-t_man = 3 * 3600 * 24 * 30  # Change me
+t_man = 1.25 * 3600 * 24 * 30  # Change me
 for num_revol in range(0, 7):
     file_maneuvers.write("Total and limit time of maneuver [sec]: " + str(t_man) + '\n')
     file_maneuvers.write("[month]: " + str(t_man/(3600 * 24 * 30)) + '\n')
