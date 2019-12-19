@@ -11,7 +11,7 @@ import numpy as np
 R_EARTH = 6378   # km
 M = 3.98600*10**5   # km**3/s**2
 DATA_LAUNCH = time.Time('2011-10-26 15:02', scale='utc')
-ALTITUDE = 1150.0  # km
+ALTITUDE = 35800 - R_EARTH  # km
 
 
 def check_alt(orbit, file_maneuvers):
@@ -52,15 +52,15 @@ def orbit_from_orbit(init_orbit, part_of_period, alfa_init):    # alfa in degree
 
 
 def maneuver_lambert(orbit_dpt, orbit_arr_sc, orbit_last, t_maneuver, file_maneuvers, distance_sc_dergee, flag,
-                     type_of_ssc_location=1, plot=False, num_revol=None,
+                     plot=False, num_revol=None,
                      is_short=False, intermediate=True):
 
     # calculate time to return back
-    alfa_back = (360 - distance_sc_dergee*5)/360 * np.pi * u.rad
+    alfa_back = (360 - distance_sc_dergee*5)/180 * np.pi * u.rad
     orbit_back = orbit_last.propagate_to_anomaly(alfa_back)
     r2_back = orbit_back.r
     v2_back = orbit_back.v
-    date_arrival_back = time.Time((DATA_LAUNCH.unix + 2.1 * orbit_dpt.period.value*((360 - distance_sc_dergee*5)/360)), format='unix')
+    date_arrival_back = time.Time((DATA_LAUNCH.unix + 2.5 * orbit_dpt.period.value*((360 - distance_sc_dergee*5)/360)), format='unix')
     orbit_arr_back = Orbit.from_vectors(Earth, r2_back, v2_back, epoch=date_arrival_back)
 
     man_lambert_back = Maneuver.lambert(orbit_last, orbit_arr_back, short=is_short, M=1)
@@ -79,11 +79,6 @@ def maneuver_lambert(orbit_dpt, orbit_arr_sc, orbit_last, t_maneuver, file_maneu
 
     t_maneuver = (t_maneuver-time_maneuver_back.value)/5
 
-    # if type_of_ssc_location == 1:
-    #     file_maneuvers.write("Where is SSC: SSC is the first one or last one" + '\n')
-    # elif type_of_ssc_location == 3:
-    #     file_maneuvers.write("Where is SSC: SSC is in the middle" + '\n')
-
     file_maneuvers.write("Number of revolution to go to one sc: " + str(num_revol) + '\n')
     file_maneuvers.write("Time of maneuver to go to one sc [sec]: " + str(t_maneuver) + '\n')
 
@@ -95,20 +90,10 @@ def maneuver_lambert(orbit_dpt, orbit_arr_sc, orbit_last, t_maneuver, file_maneu
     date_arrival = time.Time((DATA_LAUNCH.unix + t_maneuver), format='unix')
     orbit_arr = Orbit.from_vectors(Earth, r2, v2, epoch=date_arrival)
 
-    # try:
-
     if num_revol:
-
         man_lambert = Maneuver.lambert(orbit_dpt, orbit_arr, short=is_short, M=num_revol)
-
     else:
         man_lambert = Maneuver.lambert(orbit_dpt, orbit_arr, short=is_short)
-
-    # except Warning as e:
-    #     print("WARNING!")
-    #     print(e)
-    #     file_maneuvers.write("! BAD condition" + '\n')
-    #     return
 
     orbit_trans, orbit_target = orbit_dpt.apply_maneuver(man_lambert, intermediate=intermediate)
 
@@ -140,38 +125,3 @@ def maneuver_lambert(orbit_dpt, orbit_arr_sc, orbit_last, t_maneuver, file_maneu
     print("dv: " + str(dv_tot) + '\n')
     print("T maneuver: " + str(T_man_tot) + '\n\n')
     return False
-
-    # -------------------------------------------------------
-    # no go to init point
-    # t_maneuver = t_maneuver/ 5
-    #
-    # if type_of_ssc_location == 1:
-    #     file_maneuvers.write("Where is SSC: SSC is the first one or last one" + '\n')
-    # elif type_of_ssc_location == 3:
-    #     file_maneuvers.write("Where is SSC: SSC is in the middle" + '\n')
-    #
-    # file_maneuvers.write("Time of maneuver [month]: " + str(t_maneuver / (3600 * 24 * 30)) + '\n')
-    #
-    # alfa = orbit_dpt.n.value * t_maneuver * u.rad
-    # orbit = orbit_arr_sc.propagate_to_anomaly(alfa)
-    # r2 = orbit.r
-    # v2 = orbit.v
-    # date_arrival = time.Time((DATA_LAUNCH.unix + t_maneuver), format='unix')
-    # orbit_arr = Orbit.from_vectors(Earth, r2, v2, epoch=date_arrival)
-    #
-    # if num_revol:
-    #     man_lambert = Maneuver.lambert(orbit_dpt, orbit_arr, short=is_short, M=num_revol)
-    # else:
-    #     man_lambert = Maneuver.lambert(orbit_dpt, orbit_arr, short=is_short)
-    #
-    # cost_maneuver = man_lambert.get_total_cost()
-    # time_maneuver = man_lambert.get_total_time()
-    #
-    # dv_tot_witout_ret = cost_maneuver * 6
-    # T_man_tot_witout_ret = time_maneuver * 6
-    #
-    # file_maneuvers.write("dv without going in initial point: " + str(dv_tot_witout_ret) + '\n')
-    # file_maneuvers.write("T maneuver without going in initial point: " + str(T_man_tot_witout_ret) + '\n')
-
-    # return dv_tot, T_man_tot
-    # dv_tot_witout_ret, T_man_tot_witout_ret
